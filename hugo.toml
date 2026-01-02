@@ -1,0 +1,24 @@
+baseURL: "https://blog.sakiko.moe/"
+title: "Sakiko Blog"
+theme: "PaperMod"
+
+params:
+  # 开启深色模式
+  defaultTheme: auto 
+  
+  # 配置评论和点赞 (使用 Giscus)
+  comments: true
+  
+  # 页面底部的统计 (不蒜子)
+  footer:
+    text: 'Page Views: <span id="busuanzi_value_site_pv"></span>'
+
+# 菜单配置
+menu:
+  main:
+    - identifier: archives
+      name: Archives
+      url: /archives/
+    - identifier: search
+      name: Search
+      url: /search/
