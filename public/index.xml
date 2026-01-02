@@ -6,14 +6,6 @@
     <description>Recent content on JJC&#39;s Blog</description>
     <generator>Hugo -- 0.154.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Jan 2026 03:01:43 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sat, 03 Jan 2026 03:01:43 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;test&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
