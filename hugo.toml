@@ -1,24 +1,38 @@
-baseURL: "https://blog.sakiko.moe/"
-title: "Sakiko Blog"
-theme: "PaperMod"
+baseURL = "https://blog.sakiko.moe/"
+languageCode = "zh-cn"
+title = "JJC's Blog"
+theme = "PaperMod"
 
-params:
-  # 开启深色模式
-  defaultTheme: auto 
+# 1. 核心参数设置
+[params]
+  # 开启深色模式适配
+  defaultTheme = "auto"
   
-  # 配置评论和点赞 (使用 Giscus)
-  comments: true
-  
-  # 页面底部的统计 (不蒜子)
-  footer:
-    text: 'Page Views: <span id="busuanzi_value_site_pv"></span>'
+  # 开启评论功能开关
+  comments = true
 
-# 菜单配置
-menu:
-  main:
-    - identifier: archives
-      name: Archives
-      url: /archives/
-    - identifier: search
-      name: Search
-      url: /search/
+  # 首页显示的社交图标 (GitHub等)
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/kickastone"
+
+  # 2. 这里的 Footer 放置【不蒜子】统计代码
+  [params.footer]
+    text = '阅读量: <span id="busuanzi_value_site_pv"></span>'
+
+# 3. 菜单设置 (注意 TOML 的数组写法是双中括号 [[ ]])
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 20
+
+# 4. 其它 Hugo 原生设置 (保持默认即可)
+[markup.highlight]
+  noClasses = false
